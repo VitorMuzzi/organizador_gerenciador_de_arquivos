@@ -8,17 +8,15 @@ import json
 import sys
 from send2trash import send2trash
 
-# --- CARREGAMENTO DA CONFIGURAÇÃO ---
 def carregar_configuracao():
     caminho_config = 'config.json'
     if not os.path.exists(caminho_config):
         print(f"Erro: O arquivo '{caminho_config}' não foi encontrado na pasta atual.")
-        sys.exit(1) # Encerra o script com código de erro
+        sys.exit(1)
         
     with open(caminho_config, 'r', encoding='utf-8') as arquivo_json:
         return json.load(arquivo_json)
 
-# Carrega os dados do JSON para as variáveis
 config = carregar_configuracao()
 PASTA_DOWNLOADS = config['pasta_downloads']
 TIPOS_DE_ARQUIVOS = config['tipos_de_arquivos']
