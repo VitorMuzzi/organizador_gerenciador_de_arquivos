@@ -1,0 +1,10 @@
+{
+    "pasta_downloads": "C:\\Users\\Emily-Operacional\\Downloads",
+    "tipos_de_arquivos": {
+        "Imagens": [".jpg", ".jpeg", ".png", ".gif", ".webp"],
+        "Documentos": [".pdf", ".docx", ".txt", ".xlsx", ".csv"],
+        "Instaladores": [".exe", ".msi"],
+        "Compactados": [".zip", ".rar", ".7z"],
+        "Videos": [".mp4", ".mkv", ".avi"]
+    }
+}
