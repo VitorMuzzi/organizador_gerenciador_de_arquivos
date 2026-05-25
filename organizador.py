@@ -20,7 +20,6 @@ def carregar_configuracao():
 config = carregar_configuracao()
 PASTA_DOWNLOADS = config['pasta_downloads']
 TIPOS_DE_ARQUIVOS = config['tipos_de_arquivos']
-# ------------------------------------
 
 logging.basicConfig(
     filename=os.path.join(PASTA_DOWNLOADS, 'historico_organizacao.log'),
